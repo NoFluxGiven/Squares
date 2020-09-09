@@ -1,6 +1,11 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function Vec2( _x, _y ) constructor {
+
+function Vec2( _x, _y ) {
+	return new _Vec2( _x, _y );
+}
+
+function _Vec2( _x, _y ) constructor {
 	
 	Set = function( _x, _y ) {
 		

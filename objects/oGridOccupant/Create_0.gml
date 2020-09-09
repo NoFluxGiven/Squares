@@ -1,9 +1,9 @@
 
 grid = noone;
-gridPos = new Vec2( -1, -1 );
+gridPos = Vec2( -1, -1 );
 
-moveStart = new Vec2( -1, -1 );
-moveTarget = new Vec2( -1, -1 );
+moveStart = Vec2( -1, -1 );
+moveTarget = Vec2( -1, -1 );
 moveProgress = 0;
 moveUpdate = undefined;
 moving = false;
@@ -63,5 +63,4 @@ function MoveUpdate_Basic( s,t ) {
 	
 	x = s.x + lengthdir_x( dist * moveProgress, dir );
 	y = s.y + lengthdir_y( dist * moveProgress, dir );
-	
 }
